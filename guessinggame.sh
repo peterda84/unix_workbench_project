@@ -2,7 +2,7 @@
 # File: guessinggame.sh
 
 guess=-1
-nr_files=$(ls -p | grep -v / | wc -l)
+nr_files=$(ls -A | wc -l)
 
 function guessing {
 while [[ $guess -ne $nr_files ]]
@@ -25,3 +25,4 @@ done
 }
 
 guessing
+
